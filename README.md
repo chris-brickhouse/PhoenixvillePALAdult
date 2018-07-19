@@ -1,5 +1,4 @@
 # Phoenixville PAL Adult
-===========================
 Adult learning 2018
 
 # Course Outline
