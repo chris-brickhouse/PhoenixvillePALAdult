@@ -1,47 +1,48 @@
 # Phoenixville PAL Adult
+===========================
 Adult learning 2018
 
 # Course Outline
-// HTML Tag Listing
+HTML Tag Listing
 - https://www.w3schools.com/tags/
 
-Week 1:
-- Basic HTML
--- Document Structure
---- html - wraps entire document
---- head - has important document information
---- title - changes title in browser tab
---- body - this contains all visible information. all tags go inside here
--- div - division
--- hr - horizontal line
--- img
--- lists
---- ul, ol
----- li
--- em, strong - italic, bold
--- table
---- thead
----- tr - table row
----- th - table header cell
---- tbody
----- tr
----- td - table cell
---- tfooter
----- tr
----- td - table cell
+# Week 1:
+- Basic HTML<br>
+-- Document Structure<br>
+--- html - wraps entire document<br>
+--- head - has important document information<br>
+--- title - changes title in browser tab<br>
+--- body - this contains all visible information. all tags go inside here<br>
+-- div - division<br>
+-- hr - horizontal line<br>
+-- img<br>
+-- lists<br>
+--- ul, ol<br>
+---- li<br>
+-- em, strong - italic, bold<br>
+-- table<br>
+--- thead<br>
+---- tr - table row<br>
+---- th - table header cell<br>
+--- tbody<br>
+---- tr<br>
+---- td - table cell<br>
+--- tfooter<br>
+---- tr<br>
+---- td - table cell<br>
 
-Week 2:
-- Forms
--- label
--- input
---- type="text" - textbox
---- type="checkbox" - checkbox
---- type="radio" - radio button
--- select - dropdown
---- option - dropdown item
--- button - button
-- Font Awesome
--- intro - how to insert into <head>
--- https://fontawesome.com/icons/ for more info
+# Week 2:
+- Forms<br>
+-- label<br>
+-- input<br>
+--- type="text" - textbox<br>
+--- type="checkbox" - checkbox<br>
+--- type="radio" - radio button<br>
+-- select - dropdown<br>
+--- option - dropdown item<br>
+-- button - button<br>
+- Font Awesome<br>
+-- intro - how to insert into <head><br>
+-- https://fontawesome.com/icons/ for more info<br>
 
 
