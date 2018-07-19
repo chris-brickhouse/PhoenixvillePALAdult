@@ -6,6 +6,7 @@
 
 <body>
 
+    <a href="product.html">this is my first link</a><br />
     <img height="400" width="400" src="https://www.governorsballmusicfestival.com/wp-www-governorsballmusicfestival-com/wp/wp-content/uploads/2018/01/menzosphoto9486.jpg" />
     <div>
         welcome
@@ -45,8 +46,31 @@
     </ol>
 
     <form>
-        <label>name</label><br />
-        <input type="text" id="name" name="name" /><br /><br />
+        <label for="name">name</label><br />
+        <input type="text" id="name" name="name" placeholder="name here...." /><br /><br />
+
+        <label for="myselect">dropdown</label><br/>
+        <select id="myselect" name="myselect" size="6" multiple>
+            <option value="">Please choose a value</option>
+            <option value="1">First Option</option>
+            <option value="2">Second Option</option>
+        </select><br /><br />
+
+        <label for="mytextarea">textarea</label><br />
+        <textarea id="mytextarea" name="mytextarea" cols="50" rows="6" placeholder="my textarea"></textarea><br /><br />
+
+        <label for="mycheckbox">
+            <input type="checkbox" id="mycheckbox" name="mycheckbox" checked />
+            yes
+        </label><br /><br />
+
+        <label for="myradio1">
+            <input type="radio" id="myradio1" name="myradio" /> Yes            
+        </label>
+
+        <label for="myradio2">
+            <input type="radio" id="myradio2" name="myradio" /> No
+        </label><br /><br />
 
         <button>click me</button>
     </form>
