@@ -3,6 +3,7 @@
 <head>
     <title>My Music Site</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Open+Sans" rel="stylesheet" />
     <style>
         body,
         html {
@@ -48,12 +49,43 @@
         
         body {
             text-align: center;
+            font-family: 'Open Sans';
+        }
+        
+        td,
+        th {
+            font-family: 'Roboto';
         }
         
         .container {
             margin: 0 auto;
             width: 1024px;
             text-align: left;
+        }
+        
+        #main_products {
+            border: 1px solid #c0c0c0;
+        }
+        
+        #main_products th,
+        #main_products td {
+            padding: 10px;
+        }
+        
+        #main_products th {
+            background-color: #c0c0c0;
+        }
+        
+        #main_products td {
+            vertical-align: top;
+            background-color: #efefef;
+        }
+        
+        #main_products td h1 {
+            margin: 0;
+            margin-bottom: 5px;
+            border-bottom: 1px solid #c0c0c0;
+            font: bolder 1.5em 'Roboto';
         }
     </style>
 </head>
@@ -79,9 +111,19 @@
                 <tbody>
                     <tr>
                         <td><img src="images/image1.png" /></td>
-                        <td>Run the Jewels kicked off 2017 with a bang(er) - RTJ3. This album absolutely set the tone for a year of political strife, spitting lines like 'He wore a bad toupee and a spray tan' and 'Get that punk mother*** out of here'. \n\n
-                            They clearly show where they stand on the side of social issues, and what better way to address these than with dual perspectives from two very intelligent men of diffent races and backgrounds. Also, you can't beat appearances
-                            by Zack de la Rocha. You can't even really compare this to the other albums because it has a totally different vibe of urgency and retaliation for what is being done to us as a people. We the People. </td>
+                        <td>
+                            <h1>Run The Jewels</h1>
+                            Run the Jewels kicked off 2017 with a bang(er) - RTJ3. This album absolutely set the tone for a year of political strife, spitting lines like 'He wore a bad toupee and a spray tan' and 'Get that punk mother*** out of here'. \n\n They clearly show where
+                            they stand on the side of social issues, and what better way to address these than with dual perspectives from two very intelligent men of diffent races and backgrounds. Also, you can't beat appearances by Zack de la Rocha.
+                            You can't even really compare this to the other albums because it has a totally different vibe of urgency and retaliation for what is being done to us as a people. We the People. </td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/image2.png" /></td>
+                        <td>
+                            <h1>The Menzingers</h1>
+                            This album means more to me than most others because it has become 'the album' for my wife and I. It really does cover all of the bases - nostalgia, fun, some seriousness and the catchy hooks that they are known for. \n\n I could include a lot more about
+                            this but it would probably sound super mushy so I'll let you form your own opinions on the matter. This album is the magnificent crescendo of their career, every time I think they won't be able to top themselves, they do. Anxiously
+                            awaiting the next album. </td>
                     </tr>
                 </tbody>
             </table>
