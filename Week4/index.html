@@ -5,108 +5,9 @@
     <!-- this is the stylesheet for font awesome. -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
 
-    <!-- these are the google fonts we istalled. -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto|Open+Sans" rel="stylesheet" />
-    <style>
-        /* resets the margin and padding for html, body, ul, li */
-        
-        body,
-        html,
-        ul,
-        li {
-            margin: 0;
-            padding: 0;
-        }
-        /* this is the ul tag with id of #nav */
-        
-        #nav {
-            border: 1px solid #c0c0c0;
-            display: inline-block;
-        }
-        /* this applies to all <li> inside <ul id=nav> */
-        
-        #nav li {
-            list-style-type: none;
-            float: left;
-            border: 1px solid #000;
-            padding: 5px;
-            margin: 5px;
-        }
-        /* all <a> inside <li> inside <ul id=nav> */
-        
-        #nav li a {
-            text-decoration: none;
-            color: rgb(39, 71, 131);
-        }
-        /* visited tags inside nav */
-        
-        #nav li a:visited {
-            color: rgb(134, 7, 7);
-        }
-        /* the logo */
-        
-        .nav-img {
-            border: none !important;
-        }
-        /* add padding to body content */
-        
-        .main-body {
-            padding: 10px;
-        }
-        /* add padding to <p> tags inside body content */
-        
-        .main-body p {
-            padding: 5px;
-        }
-        /* center body and set google font */
-        
-        body {
-            text-align: center;
-            font-family: 'Open Sans';
-        }
-        
-        td,
-        th {
-            font-family: 'Roboto';
-        }
-        /* container div is 1024pixels wide, and the auto left and right margin centers it. */
-        
-        .container {
-            margin: 0 auto;
-            width: 1024px;
-            text-align: left;
-        }
-        /* this is the products table. */
-        
-        #main_products {
-            border: 1px solid #c0c0c0;
-        }
-        /* adds padding to cells */
-        
-        #main_products th,
-        #main_products td {
-            padding: 10px;
-        }
-        /* changes header bgcolor to a darker grey */
-        
-        #main_products th {
-            background-color: #c0c0c0;
-        }
-        /* regular cells are lighter grey */
-        
-        #main_products td {
-            vertical-align: top;
-            background-color: #efefef;
-        }
-        /* styling for header tags inside cells */
-        
-        #main_products td h1 {
-            margin: 0;
-            margin-bottom: 5px;
-            border-bottom: 1px solid #c0c0c0;
-            font: bolder 1.5em 'Roboto';
-        }
-    </style>
+    <!-- these are the google fonts we installed. -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css?ver=1">
 </head>
 
 <body>
@@ -124,32 +25,53 @@
         <div class="main-body">
 
             <!-- products table (#main_products) -->
-            <table id="main_products">
-                <thead>
-                    <tr>
-                        <th>&nbsp;</th>
-                        <th>Desc</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><img src="images/image1.png" /></td>
-                        <td>
-                            <h1>Run The Jewels</h1>
-                            Run the Jewels kicked off 2017 with a bang(er) - RTJ3. This album absolutely set the tone for a year of political strife, spitting lines like 'He wore a bad toupee and a spray tan' and 'Get that punk mother*** out of here'. \n\n They clearly show where
-                            they stand on the side of social issues, and what better way to address these than with dual perspectives from two very intelligent men of diffent races and backgrounds. Also, you can't beat appearances by Zack de la Rocha.
-                            You can't even really compare this to the other albums because it has a totally different vibe of urgency and retaliation for what is being done to us as a people. We the People. </td>
-                    </tr>
-                    <tr>
-                        <td><img src="images/image2.png" /></td>
-                        <td>
-                            <h1>The Menzingers</h1>
-                            This album means more to me than most others because it has become 'the album' for my wife and I. It really does cover all of the bases - nostalgia, fun, some seriousness and the catchy hooks that they are known for. \n\n I could include a lot more about
-                            this but it would probably sound super mushy so I'll let you form your own opinions on the matter. This album is the magnificent crescendo of their career, every time I think they won't be able to top themselves, they do. Anxiously
-                            awaiting the next album. </td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="list-mode">
+                <table id="main_products">
+                    <thead>
+                        <tr>
+                            <th>&nbsp;</th>
+                            <th>Desc</th>
+                            <th>&nbsp;</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><img src="images/image1.png" /></td>
+                            <td>
+                                <h1>Run The Jewels</h1>
+                                Run the Jewels kicked off 2017 with a bang(er) - RTJ3. This album absolutely set the tone for a year of political strife, spitting lines like 'He wore a bad toupee and a spray tan' and 'Get that punk mother*** out of here'. \n\n They clearly show where
+                                they stand on the side of social issues, and what better way to address these than with dual perspectives from two very intelligent men of diffent races and backgrounds. Also, you can't beat appearances by Zack de la Rocha.
+                                You can't even really compare this to the other albums because it has a totally different vibe of urgency and retaliation for what is being done to us as a people. We the People.
+                            </td>
+                            <td><button class="view"><i class="fas fa-search"></i></button></td>
+                        </tr>
+                        <tr>
+                            <td><img src="images/image2.png" /></td>
+                            <td>
+                                <h1>The Menzingers</h1>
+                                This album means more to me than most others because it has become 'the album' for my wife and I. It really does cover all of the bases - nostalgia, fun, some seriousness and the catchy hooks that they are known for. \n\n I could include a lot more about
+                                this but it would probably sound super mushy so I'll let you form your own opinions on the matter. This album is the magnificent crescendo of their career, every time I think they won't be able to top themselves, they do.
+                                Anxiously awaiting the next album.
+                            </td>
+                            <td><button class="view"><i class="fas fa-search"></i></button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="view-mode">
+                <div class="col">
+                    <img src="images/image1.png" />
+                </div>
+                <div class="col">
+                    <h1>Run The Jewels</h1>
+                    <h2>$5.00</h2>
+                    Run the Jewels kicked off 2017 with a bang(er) - RTJ3. This album absolutely set the tone for a year of political strife, spitting lines like 'He wore a bad toupee and a spray tan' and 'Get that punk mother*** out of here'. \n\n They clearly show where
+                    they stand on the side of social issues, and what better way to address these than with dual perspectives from two very intelligent men of diffent races and backgrounds. Also, you can't beat appearances by Zack de la Rocha. You can't
+                    even really compare this to the other albums because it has a totally different vibe of urgency and retaliation for what is being done to us as a people. We the People.
+                </div>
+            </div>
+
         </div>
 
     </div>

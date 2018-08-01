@@ -1,0 +1,132 @@
+/* resets the margin and padding for html, body, ul, li */
+
+body,
+html,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* this is the ul tag with id of #nav */
+
+#nav {
+    border: 1px solid #c0c0c0;
+    display: inline-block;
+}
+
+
+/* this applies to all <li> inside <ul id=nav> */
+
+#nav li {
+    list-style-type: none;
+    float: left;
+    border: 1px solid #000;
+    padding: 5px;
+    margin: 5px;
+}
+
+
+/* all <a> inside <li> inside <ul id=nav> */
+
+#nav li a {
+    text-decoration: none;
+    color: rgb(39, 71, 131);
+}
+
+
+/* visited tags inside nav */
+
+#nav li a:visited {
+    color: rgb(134, 7, 7);
+}
+
+
+/* the logo */
+
+.nav-img {
+    border: none !important;
+}
+
+
+/* add padding to body content */
+
+.main-body {
+    padding: 10px;
+}
+
+
+/* add padding to <p> tags inside body content */
+
+.main-body p {
+    padding: 5px;
+}
+
+
+/* center body and set google font */
+
+body {
+    text-align: center;
+    font-family: 'Open Sans';
+}
+
+td,
+th {
+    font-family: 'Roboto';
+}
+
+
+/* container div is 1024pixels wide, and the auto left and right margin centers it. */
+
+.container {
+    margin: 0 auto;
+    width: 1024px;
+    text-align: left;
+}
+
+
+/* this is the products table. */
+
+#main_products {
+    border: 1px solid #c0c0c0;
+}
+
+
+/* adds padding to cells */
+
+#main_products th,
+#main_products td {
+    padding: 10px;
+}
+
+
+/* changes header bgcolor to a darker grey */
+
+#main_products th {
+    background-color: #c0c0c0;
+}
+
+
+/* regular cells are lighter grey */
+
+#main_products td {
+    vertical-align: top;
+    background-color: #efefef;
+}
+
+
+/* styling for header tags inside cells */
+
+#main_products td h1 {
+    margin: 0 0 5px 0;
+    border-bottom: 1px solid #c0c0c0;
+    font: bolder 1.5em 'Roboto';
+}
+
+
+/* all view-mode tags are hidden by default */
+
+.view-mode {
+    display: none;
+}
