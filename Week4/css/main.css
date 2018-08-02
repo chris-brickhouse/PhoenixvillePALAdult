@@ -147,7 +147,7 @@ th {
     border: 1px dashed #c0c0c0;
 }
 
-.view-mode .col {
+div.view-mode div.col {
     float: left;
 }
 
