@@ -8,6 +8,10 @@ li {
     padding: 0;
 }
 
+.clear {
+    clear: both;
+}
+
 
 /* this is the ul tag with id of #nav */
 
@@ -125,8 +129,37 @@ th {
 }
 
 
+/* style button inside td */
+
+#main_products td button.view {
+    padding: 5px;
+    background-color: rgb(134, 15, 15);
+    color: #fff;
+}
+
+
 /* all view-mode tags are hidden by default */
 
 .view-mode {
     display: none;
+    padding: 15px;
+    margin: 15px;
+    border: 1px dashed #c0c0c0;
+}
+
+.view-mode .col {
+    float: left;
+}
+
+.view-mode .col-1 {
+    width: 250px;
+}
+
+.view-mode .col-1 img {
+    max-width: 220px;
+    text-align: center;
+}
+
+.view-mode .col-2 {
+    width: 650px;
 }

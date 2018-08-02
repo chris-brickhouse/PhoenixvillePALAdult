@@ -8,6 +8,25 @@
     <!-- these are the google fonts we installed. -->
     <link href="https://fonts.googleapis.com/css?family=Roboto|Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css?ver=1">
+    <script>
+        function showDetail() {
+
+            var show_views = document.getElementsByClassName('view-mode');
+            var list_views = document.getElementsByClassName('list-mode');
+
+            for (var i = 0; i < show_views.length; i++) {
+                show_views[i].style.display = 'block';
+                console.log(show_views[i]);
+            }
+
+            for (var i = 0; i < list_views.length; i++) {
+                list_views[i].style.display = 'none';
+                console.log(list_views[i]);
+            }
+
+            return false;
+        }
+    </script>
 </head>
 
 <body>
@@ -43,7 +62,7 @@
                                 they stand on the side of social issues, and what better way to address these than with dual perspectives from two very intelligent men of diffent races and backgrounds. Also, you can't beat appearances by Zack de la Rocha.
                                 You can't even really compare this to the other albums because it has a totally different vibe of urgency and retaliation for what is being done to us as a people. We the People.
                             </td>
-                            <td><button class="view"><i class="fas fa-search"></i></button></td>
+                            <td><button class="view" id="button_1" onclick="return showDetail();" type="button"><i class="fas fa-search"></i></button></td>
                         </tr>
                         <tr>
                             <td><img src="images/image2.png" /></td>
@@ -60,16 +79,31 @@
             </div>
 
             <div class="view-mode">
-                <div class="col">
+                <div class="col col-1">
                     <img src="images/image1.png" />
                 </div>
-                <div class="col">
+                <div class="col col-2">
                     <h1>Run The Jewels</h1>
                     <h2>$5.00</h2>
                     Run the Jewels kicked off 2017 with a bang(er) - RTJ3. This album absolutely set the tone for a year of political strife, spitting lines like 'He wore a bad toupee and a spray tan' and 'Get that punk mother*** out of here'. \n\n They clearly show where
                     they stand on the side of social issues, and what better way to address these than with dual perspectives from two very intelligent men of diffent races and backgrounds. Also, you can't beat appearances by Zack de la Rocha. You can't
                     even really compare this to the other albums because it has a totally different vibe of urgency and retaliation for what is being done to us as a people. We the People.
                 </div>
+                <div class="clear"></div>
+            </div>
+
+            <div class="view-mode">
+                <div class="col col-1">
+                    <img src="images/image2.png" />
+                </div>
+                <div class="col col-2">
+                    <h1>The Menzingers</h1>
+                    <h2>$6.00</h2>
+                    This album means more to me than most others because it has become 'the album' for my wife and I. It really does cover all of the bases - nostalgia, fun, some seriousness and the catchy hooks that they are known for. \n\n I could include a lot more about
+                    this but it would probably sound super mushy so I'll let you form your own opinions on the matter. This album is the magnificent crescendo of their career, every time I think they won't be able to top themselves, they do. Anxiously
+                    awaiting the next album.
+                </div>
+                <div class="clear"></div>
             </div>
 
         </div>
