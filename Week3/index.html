@@ -2,21 +2,28 @@
 
 <head>
     <title>My Music Site</title>
+    <!-- this is the stylesheet for font awesome. -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+
+    <!-- these are the google fonts we istalled. -->
     <link href="https://fonts.googleapis.com/css?family=Roboto|Open+Sans" rel="stylesheet" />
     <style>
+        /* resets the margin and padding for html, body, ul, li */
+        
         body,
-        html {
+        html,
+        ul,
+        li {
             margin: 0;
             padding: 0;
         }
+        /* this is the ul tag with id of #nav */
         
         #nav {
             border: 1px solid #c0c0c0;
             display: inline-block;
-            margin: 0;
-            padding: 0;
         }
+        /* this applies to all <li> inside <ul id=nav> */
         
         #nav li {
             list-style-type: none;
@@ -25,27 +32,33 @@
             padding: 5px;
             margin: 5px;
         }
+        /* all <a> inside <li> inside <ul id=nav> */
         
         #nav li a {
             text-decoration: none;
             color: rgb(39, 71, 131);
         }
+        /* visited tags inside nav */
         
         #nav li a:visited {
             color: rgb(134, 7, 7);
         }
+        /* the logo */
         
         .nav-img {
             border: none !important;
         }
+        /* add padding to body content */
         
         .main-body {
             padding: 10px;
         }
+        /* add padding to <p> tags inside body content */
         
         .main-body p {
             padding: 5px;
         }
+        /* center body and set google font */
         
         body {
             text-align: center;
@@ -56,30 +69,36 @@
         th {
             font-family: 'Roboto';
         }
+        /* container div is 1024pixels wide, and the auto left and right margin centers it. */
         
         .container {
             margin: 0 auto;
             width: 1024px;
             text-align: left;
         }
+        /* this is the products table. */
         
         #main_products {
             border: 1px solid #c0c0c0;
         }
+        /* adds padding to cells */
         
         #main_products th,
         #main_products td {
             padding: 10px;
         }
+        /* changes header bgcolor to a darker grey */
         
         #main_products th {
             background-color: #c0c0c0;
         }
+        /* regular cells are lighter grey */
         
         #main_products td {
             vertical-align: top;
             background-color: #efefef;
         }
+        /* styling for header tags inside cells */
         
         #main_products td h1 {
             margin: 0;
@@ -96,13 +115,17 @@
 
     <div class="container">
 
+        <!-- this is the nav (#nav) -->
         <ul id="nav">
             <li class="nav-img"><img src="images/logo.png" /></li>
             <li class="active"><a href="index.html">Home</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
 
+        <!-- body content starts here (.main-body) -->
         <div class="main-body">
+
+            <!-- products table (#main_products) -->
             <table id="main_products">
                 <thead>
                     <tr>

@@ -43,5 +43,8 @@ HTML Tag Listing
 - Font Awesome<br>
 -- intro - how to insert into <head><br>
 -- https://fontawesome.com/icons/ for more info<br>
+  
+# Week 3:
+- CSS - see comments in code and recap. http://www.phoenixvillepal.org/Recap/3
 
 
