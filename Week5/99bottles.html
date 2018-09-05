@@ -3,19 +3,32 @@
 <head>
     <title>My 99 Bottles</title>
 
+    <!-- font awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+    
+    <!-- we used npm to add jquery and bootstrap -->
+    <!-- npm is a package manager, google node.js and install that. -->
+    <!-- you use this to import any javascript packages you need. -->
+    <!-- ref: https://docs.npmjs.com/-->
     <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
-
     <script src="../node_modules/jquery/dist/jquery.slim.js"></script>
     <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
     <style>
         /* css comment */
         
+        /*  add this class to anything to make it red 
+             ref: https://www.w3schools.com/cssref/sel_class.asp
+        */
+        
         .red {
             color: red;
         }
         
+        /* 
+            div with id="bottle_container" 
+            ref: https://www.w3schools.com/css/css_syntax.asp            
+        */
         #bottle_container {
             width: 500px;
             border: 1px solid #c0c0c0;
@@ -23,6 +36,7 @@
             margin: 10px;
         }
         
+        /* all <i> in div with id="bottle_container" */
         #bottle_container i {
             padding: 5px;
         }
@@ -35,23 +49,47 @@
         line 2
         */
 
+        // $(document).ready waits for the DOM to be loaded.
+        // all jquery operations can be done by using inline functions - function() {}
+        // ref: https://learn.jquery.com/using-jquery-core/document-ready/
         $(document).ready(function() {
+
+            // array that holds bottle tags
             var bottles = [];
+
+            // set number i = 1, do this until i is equal to 99 and add 1 to i every time (iteration)
+            // ref: https://www.w3schools.com/js/js_loop_for.asp
             for (var i = 1; i <= 99; i++) {
+
+                // if the counter i has reached 49, do a user icon
+                // ref: https://www.w3schools.com/js/js_if_else.asp
                 if (i != 49) {
                     bottles.push('<i class="fas fa-user"></i>');
-                } else {
+                } 
+                // otherwise do a script bottle
+                else {
                     bottles.push('<i class="fas fa-prescription-bottle"></i>');
                 }
             }
+
+            // set a string called bottle_html from the contents of the bottles array, .join() basically appends them to each other to form one string.
+            // ref: https://www.w3schools.com/js/js_array_methods.asp
             var bottle_html = bottles.join('');
+            
+            // this uses the #bottle-container selector and sets the inner html to the bottles_html string, then uses method chaining to add the .red class.
+            // ref: https://www.w3schools.com/jquery/jquery_ref_selectors.asp
             $('#bottle_container').html(bottle_html).addClass('red');
 
+            // loops 101 times, appending the following div - div id="div{i}" class="{even if i is even|odd if i is odd number}" with the contents div{i}
             for (var i = 0; i < 100; i++) {
                 $(document.body).append('<div id="div' + i + '" class="' + ((i % 2 == 0) ? "even" : "odd") + '">div ' + i + '</div>');
             }
 
+            // this chooses all radio buttons without the id #radio2 and checks them.
             $('input[type="radio"]:not("#radio2")').prop('checked', true);
+
+            // this loops through all items with class .even that was inserved above.
+            // ref: https://api.jquery.com/each/
             $('.even').addClass('red').each(function() {
                 var $this = $(this);
                 $this.text($this.text() + ' - this is even')
@@ -61,11 +99,10 @@
 </head>
 
 <body>
-    <!-- this is help -->
-    <div id="bottle_container">
+    <!-- this is the bottle container that everything will be appended to. -->
+    <div id="bottle_container"></div>
 
-    </div>
-
+    <!-- this is the form we will use for the checked exercise. -->
     <form>
         radio 1:<br>
         <input type="radio" id="radio1" /><br> radio 2:<br>
