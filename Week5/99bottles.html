@@ -1,0 +1,81 @@
+<html>
+
+<head>
+    <title>My 99 Bottles</title>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+    <script src="../node_modules/jquery/dist/jquery.slim.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <style>
+        /* css comment */
+        
+        .red {
+            color: red;
+        }
+        
+        #bottle_container {
+            width: 500px;
+            border: 1px solid #c0c0c0;
+            padding: 10px;
+            margin: 10px;
+        }
+        
+        #bottle_container i {
+            padding: 5px;
+        }
+    </style>
+    <script>
+        // this is a comment
+
+        /* 
+        this is multi line
+        line 2
+        */
+
+        $(document).ready(function() {
+            var bottles = [];
+            for (var i = 1; i <= 99; i++) {
+                if (i != 49) {
+                    bottles.push('<i class="fas fa-user"></i>');
+                } else {
+                    bottles.push('<i class="fas fa-prescription-bottle"></i>');
+                }
+            }
+            var bottle_html = bottles.join('');
+            $('#bottle_container').html(bottle_html).addClass('red');
+
+            for (var i = 0; i < 100; i++) {
+                $(document.body).append('<div id="div' + i + '" class="' + ((i % 2 == 0) ? "even" : "odd") + '">div ' + i + '</div>');
+            }
+
+            $('input[type="radio"]:not("#radio2")').prop('checked', true);
+            $('.even').addClass('red').each(function() {
+                var $this = $(this);
+                $this.text($this.text() + ' - this is even')
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <!-- this is help -->
+    <div id="bottle_container">
+
+    </div>
+
+    <form>
+        radio 1:<br>
+        <input type="radio" id="radio1" /><br> radio 2:<br>
+        <input type="radio" id="radio2" /><br> radio 3:<br>
+        <input type="radio" id="radio3" /><br> text 1:<br>
+        <input type="text" id="text1" /><br> text 2:<br>
+        <input type="text" id="text2" /><br> text 3:<br>
+        <input type="text" id="text3" /><br>
+    </form>
+
+</body>
+
+</html>
